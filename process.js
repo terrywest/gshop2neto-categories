@@ -25,6 +25,7 @@ fs.createReadStream(csvFilePath)
     }
 
     path = path.replace(/>(?:.(?!>.+))+$/, "");
+    path = path.trim(path);
     
     newRow = {
         ct: "Google Product Categories",
